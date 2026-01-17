@@ -166,30 +166,49 @@ h2 {
 .timeline-item li {
   margin-bottom: 6px;
 }
+/* ================= CERT LOGO BADGES (NO IMAGES) ================= */
 
-/* ================= CERTIFICATIONS ================= */
-.certs {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #0b0e14;
 }
 
+/* AWS */
+.logo.aws {
+  background: linear-gradient(135deg, #ff9900, #ffb84d);
+}
+
+/* CEH */
+.logo.ceh {
+  background: linear-gradient(135deg, #e63946, #ff6b6b);
+}
+
+/* IBM */
+.logo.ibm {
+  background: linear-gradient(135deg, #0f62fe, #4589ff);
+  color: #fff;
+}
+
+/* Align cert card */
 .cert {
   display: flex;
   align-items: center;
   gap: 18px;
 }
 
-.cert img {
-  width: 64px;
-  height: auto;
-  object-fit: contain;
-  filter: brightness(1.1);
+.cert span {
+  font-size: 1.05rem;
+  font-weight: 500;
 }
 
-@media (max-width: 600px) {
-  .cert {
-    flex-direction: row;
-  }
-}
 
 /* ================= CONTACT ================= */
 #contact p {
