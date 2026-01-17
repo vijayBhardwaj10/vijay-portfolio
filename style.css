@@ -1,16 +1,32 @@
+/* ================= GLOBAL RESET ================= */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: #0b0e14;
   color: #e6e8eb;
   line-height: 1.7;
 }
 
-/* HERO */
+/* ================= LINKS ================= */
+a {
+  color: #4fd1c5;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+/* ================= HERO SECTION ================= */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -23,11 +39,12 @@ body {
 .hero-inner {
   text-align: center;
   max-width: 900px;
-  padding: 40px;
+  padding: 40px 20px;
 }
 
 .avatar {
   width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 3px solid #4fd1c5;
   margin-bottom: 20px;
@@ -44,12 +61,13 @@ body {
 }
 
 .hero-sub {
-  max-width: 700px;
+  max-width: 720px;
   margin: 25px auto;
   font-size: 1.1rem;
   opacity: 0.85;
 }
 
+/* ================= BUTTONS ================= */
 .hero-actions {
   margin-top: 30px;
 }
@@ -57,9 +75,9 @@ body {
 .btn {
   padding: 12px 28px;
   border-radius: 999px;
-  text-decoration: none;
   font-weight: 600;
   margin: 0 6px;
+  display: inline-block;
 }
 
 .primary {
@@ -72,7 +90,7 @@ body {
   color: #4fd1c5;
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 .section {
   padding: 100px 20px;
 }
@@ -93,9 +111,10 @@ body {
 h2 {
   font-size: 2.2rem;
   margin-bottom: 25px;
+  font-weight: 700;
 }
 
-/* GRID */
+/* ================= GRID SYSTEM ================= */
 .grid {
   display: grid;
   gap: 20px;
@@ -106,21 +125,32 @@ h2 {
 }
 
 .certs {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-/* GLASS CARD */
+/* ================= GLASS CARD ================= */
 .glass {
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 14px;
-  padding: 20px;
-  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 22px;
+  backdrop-filter: blur(14px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* TIMELINE */
+.glass:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ================= EXPERIENCE ================= */
 .timeline-item {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
+}
+
+.timeline-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 6px;
 }
 
 .timeline-item span {
@@ -129,23 +159,62 @@ h2 {
 }
 
 .timeline-item ul {
-  padding-left: 18px;
+  padding-left: 20px;
+  margin-top: 12px;
 }
 
-/* CERTS */
+.timeline-item li {
+  margin-bottom: 6px;
+}
+
+/* ================= CERTIFICATIONS ================= */
 .cert {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 18px;
 }
 
 .cert img {
-  width: 50px;
+  width: 60px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(1.1);
 }
 
-/* FOOTER */
+.cert span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* ================= CONTACT ================= */
+#contact p {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+/* ================= FOOTER ================= */
 footer {
-  padding: 30px;
+  padding: 30px 15px;
   text-align: center;
+  font-size: 0.9rem;
   opacity: 0.5;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 16px;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+  }
 }
