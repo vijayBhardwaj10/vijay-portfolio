@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+
+/* WELCOME SCREEN */
+
+.welcome-screen {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(135deg, #0a2540, #0f4c75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: hideWelcome 4s forwards;
+}
+
+.welcome-content {
+    text-align: center;
+    color: white;
+}
+
+.welcome-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.welcome-content p {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.welcome-content span {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.loader {
+    margin: 25px auto 0;
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hideWelcome {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+/* MAIN CONTENT */
+
+.main-content {
+    animation: showMain 5s forwards;
+}
+
+@keyframes showMain {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #0a2540, #0f4c75);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.subtitle {
+    font-size: 22px;
+}
+
+.tagline {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+
+/* BUTTONS */
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 5px;
+    display: inline-block;
+}
+
+.primary {
+    background: #00b4d8;
+    color: white;
+}
+
+.secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+
+/* SECTIONS */
+
+.section {
+    padding: 60px 12%;
+    background: white;
+}
+
+.bg-light {
+    background: #eef3f7;
+}
+
+.bg-dark {
+    background: #0a2540;
+    color: white;
+}
+
+.section h2 {
+    margin-bottom: 25px;
+    border-left: 5px solid #00b4d8;
+    padding-left: 10px;
+}
+
+
+/* GRID */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* EXPERIENCE */
+
+.timeline-item {
+    margin-bottom: 35px;
+}
+
+.timeline-item span {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* CONTACT */
+
+.contact-box p {
+    font-size: 18px;
+    margin: 12px 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #081c2f;
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 6%;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+}
