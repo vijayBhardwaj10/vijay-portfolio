@@ -168,6 +168,10 @@ h2 {
 }
 
 /* ================= CERTIFICATIONS ================= */
+.certs {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
 .cert {
   display: flex;
   align-items: center;
@@ -175,15 +179,16 @@ h2 {
 }
 
 .cert img {
-  width: 60px;
+  width: 64px;
   height: auto;
   object-fit: contain;
   filter: brightness(1.1);
 }
 
-.cert span {
-  font-size: 1rem;
-  font-weight: 500;
+@media (max-width: 600px) {
+  .cert {
+    flex-direction: row;
+  }
 }
 
 /* ================= CONTACT ================= */
