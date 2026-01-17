@@ -2,149 +2,120 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Vijay H S | DevOps & Site Reliability Engineer</title>
+  <title>Vijay H S | DevOps & SRE Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- ================= FANCY WELCOME SCREEN ================= -->
-<div class="welcome-screen">
-  <div class="matrix"></div>
+  <!-- 1. HERO -->
+  <header class="hero-section">
+    <div class="hero-content">
+      <img src="https://avatars.githubusercontent.com/vijayBhardwaj10"
+           alt="Vijay H S"
+           class="hero-photo">
 
-  <div class="welcome-box">
-    <img src="https://avatars.githubusercontent.com/vijayBhardwaj10"
-         alt="Vijay H S"
-         class="welcome-photo">
+      <h1 class="hero-title">Vijay H S</h1>
+      <p class="hero-subtitle">DevOps & Site Reliability Engineer</p>
+      <p class="hero-tagline">
+        AWS • Linux • Terraform • Kubernetes • CI/CD • Monitoring/Observability
+      </p>
 
-    <h1 class="glitch" data-text="WELCOME">WELCOME</h1>
-    <h2>Vijay H S</h2>
-    <p class="role">DevOps & Site Reliability Engineer</p>
-    <p class="loading-text">Initializing Cloud Systems<span>.</span><span>.</span><span>.</span></p>
-  </div>
-</div>
-
-<!-- ================= MAIN CONTENT ================= -->
-<div class="main-content">
-
-  <!-- HERO -->
-  <header class="hero">
-    <img src="https://avatars.githubusercontent.com/vijayBhardwaj10"
-         alt="Vijay H S"
-         class="profile-photo">
-
-    <h1>Vijay H S</h1>
-    <p class="subtitle">DevOps & Site Reliability Engineer (SRE)</p>
-
-    <p class="tagline">
-      AWS • Linux • Terraform • Kubernetes • Dynatrace • CI/CD • Reliability Engineering
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#contact" class="btn primary">Contact Me</a>
-      <a href="https://github.com/vijayBhardwaj10" target="_blank" class="btn github">
-        GitHub
-      </a>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn primary-btn">Contact Me</a>
+        <a href="https://github.com/vijayBhardwaj10" target="_blank" class="btn outline-btn">GitHub</a>
+      </div>
     </div>
   </header>
 
-  <!-- ABOUT -->
-  <section class="section">
-    <h2>Professional Summary</h2>
-    <p>
-      DevOps & Site Reliability Engineer with 4+ years of experience supporting
-      production applications and cloud infrastructure. Strong ownership mindset
-      with hands-on expertise in AWS, Linux systems, CI/CD pipelines, monitoring
-      and observability tools such as Dynatrace, Datadog, Prometheus, and Grafana.
-      Experienced in incident management, RCA, MTTR reduction, Kubernetes (EKS),
-      and automation using Terraform and shell scripting.
+  <!-- 2. ABOUT -->
+  <section class="container section">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-text">
+      I am a DevOps & Site Reliability Engineer with over 4 years of experience building,
+      automating, and supporting cloud-native infrastructure, CI/CD pipelines, and observability systems.
+      I’ve worked with AWS, Dynatrace, Jenkins, GitHub Actions, Kubernetes (EKS), and Terraform,
+      with a strong focus on reliability, automation, and production support excellence.
     </p>
   </section>
 
-  <!-- SKILLS -->
-  <section class="section bg-light">
-    <h2>Core Skills</h2>
-    <div class="grid">
-      <div class="card"><strong>AWS Cloud</strong><br>EC2, VPC, S3, ELB/ALB, IAM, Route53, CloudWatch, CloudTrail</div>
-      <div class="card"><strong>Linux Systems</strong><br>ps, top, netstat, sar, iostat, iptables, SELinux</div>
-      <div class="card"><strong>Monitoring</strong><br>Dynatrace, Datadog, Prometheus, Grafana, CloudWatch</div>
-      <div class="card"><strong>CI/CD & DevOps</strong><br>Jenkins, Git, GitHub Actions, CodePipeline, Terraform</div>
-      <div class="card"><strong>Containers</strong><br>Docker, Kubernetes (EKS), Helm</div>
-      <div class="card"><strong>SRE</strong><br>Incident Mgmt, RCA, MTTR, On-call Support</div>
-      <div class="card"><strong>Networking</strong><br>TCP/UDP, SSL/TLS, HTTP/HTTPS, SSH, FTP, SFTP</div>
-      <div class="card"><strong>ITSM</strong><br>Jira, Confluence, ServiceNow</div>
+  <!-- 3. SKILLS -->
+  <section class="container section bg-light">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">AWS Cloud</div>
+      <div class="skill-card">Terraform / IaC</div>
+      <div class="skill-card">Docker & Kubernetes (EKS)</div>
+      <div class="skill-card">CI/CD (Jenkins, GitHub Actions)</div>
+      <div class="skill-card">Linux Systems & Networking</div>
+      <div class="skill-card">Monitoring & Observability</div>
+      <div class="skill-card">RCA & Incident Management</div>
+      <div class="skill-card">SRE (SLI/SLO/MTTR/On-call)</div>
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section">
-    <h2>Professional Experience</h2>
+  <!-- 4. EXPERIENCE -->
+  <section class="container section">
+    <h2 class="section-title">Experience</h2>
 
-    <div class="timeline-item">
+    <div class="exp-card">
       <h3>Site Reliability Engineer / DevOps Engineer</h3>
-      <span>Revonextsoft Technologies Pvt. Ltd | Sep 2024 – Present | Bangalore</span>
+      <span class="exp-date">Revonextsoft Technologies | Sep 2024 – Present</span>
       <ul>
-        <li>Monitored production applications using Dynatrace, Datadog, Grafana, CloudWatch</li>
-        <li>Owned production servers and services ensuring high availability</li>
-        <li>Troubleshot latency, error rates, and service dependencies</li>
-        <li>Performed incident management and RCA using Dynatrace PurePath</li>
-        <li>Configured Dynatrace alerts, dashboards, anomaly detection & maintenance windows</li>
-        <li>Generated ad-hoc performance and operational reports</li>
-        <li>Supported Linux systems and Kubernetes (EKS) workloads</li>
-        <li>Built and maintained CI/CD pipelines using Jenkins and Terraform</li>
+        <li>Production monitoring (Dynatrace, Datadog, CloudWatch, Prometheus)</li>
+        <li>Incident response, RCA, alert tuning</li>
+        <li>CI/CD automation using Terraform & Jenkins</li>
+        <li>AWS infrastructure management & reliability engineering</li>
       </ul>
     </div>
 
-    <div class="timeline-item">
+    <div class="exp-card">
       <h3>DevOps & Cloud Engineer</h3>
-      <span>Infobell IT Solutions (Client: AMD) | Nov 2021 – Jul 2024 | Bangalore</span>
+      <span class="exp-date">Infobell IT Solutions (Client: AMD) | Nov 2021 – Jul 2024</span>
       <ul>
-        <li>Managed AWS infrastructure ensuring security, availability, and compliance</li>
-        <li>Provided 24x7 production application support and incident handling</li>
-        <li>Built CI/CD pipelines using Jenkins, Git, and AWS services</li>
-        <li>Containerized applications with Docker and deployed to Kubernetes (EKS)</li>
-        <li>Achieved 99.9% uptime using proactive monitoring</li>
-        <li>Performed RCA and reduced MTTR by 30%</li>
-        <li>Automated infrastructure provisioning using Terraform & shell scripting</li>
-        <li>Collaborated with teams using Jira and Confluence</li>
+        <li>AWS infrastructure design & automation</li>
+        <li>Container deployment with Kubernetes & EKS</li>
+        <li>CI/CD pipelines with Jenkins & GitHub</li>
+        <li>99.9% uptime support & production efficiencies</li>
       </ul>
     </div>
   </section>
 
-  <!-- EDUCATION -->
-  <section class="section bg-light">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>MCA</strong> – Mangalayatan University (2024)</li>
-      <li><strong>BCA</strong> – University of Mysore (2020)</li>
-    </ul>
+  <!-- 5. CERTIFICATIONS -->
+  <section class="container section bg-light">
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/AWS_Certified_Solutions_Architect_Associate_logo.svg" alt="AWS CSA" class="cert-logo">
+        <p>AWS Certified Solutions Architect – Associate</p>
+      </div>
+      <div class="cert-card">
+        <img src="https://www.eccouncil.org/wp-content/uploads/CEH_logo.png" alt="CEH" class="cert-logo">
+        <p>Certified Ethical Hacker (CEH v10)</p>
+      </div>
+      <div class="cert-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Cloud" class="cert-logo">
+        <p>IBM Cloud Essentials</p>
+      </div>
+    </div>
   </section>
 
-  <!-- CERTIFICATIONS -->
-  <section class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Certified Solutions Architect – Associate</li>
-      <li>Certified Ethical Hacker (CEH v10)</li>
-      <li>IBM Cloud Essentials – Coursera</li>
-    </ul>
+  <!-- 6. CONTACT -->
+  <section class="container section">
+    <h2 class="section-title">Contact</h2>
+    <p><strong>📞 Mobile:</strong> +91 9738407411</p>
+    <p><strong>📧 Email:</strong> vijay.bhardwajhs@outlook.com</p>
+    <p><strong>🐙 GitHub:</strong> <a href="https://github.com/vijayBhardwaj10" target="_blank">github.com/vijayBhardwaj10</a></p>
+    <p><strong>📍 Location:</strong> Bangalore, India</p>
   </section>
 
-  <!-- CONTACT -->
-  <section class="section bg-dark" id="contact">
-    <h2>Contact</h2>
-    <p>📞 +91 9738407411</p>
-    <p>📧 vijay.bhardwajhs@outlook.com</p>
-    <p>🐙 <a href="https://github.com/vijayBhardwaj10" target="_blank">github.com/vijayBhardwaj10</a></p>
-    <p>📍 Bangalore, India</p>
-  </section>
-
-  <footer>
-    <p>© 2026 Vijay H S | DevOps & Site Reliability Engineer</p>
+  <!-- FOOTER -->
+  <footer class="footer-section">
+    <p>© 2026 Vijay H S. All rights reserved.</p>
   </footer>
-
-</div>
 
 </body>
 </html>
